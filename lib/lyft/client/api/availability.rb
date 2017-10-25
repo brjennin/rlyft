@@ -96,7 +96,7 @@ module Lyft
         def ride_types(args = {})
           make_request(
             http_method: :get,
-            endpoint: path_for(:nearby_drivers),
+            endpoint: path_for(:ride_types),
             access_token: args.delete(:access_token),
             options: { query: args }
           )
